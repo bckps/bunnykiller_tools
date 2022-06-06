@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2022-01-07T22:22:51</created>
+    <modified>2022-01-07T22:22:51</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">40</xfov>
+            <aspect_ratio>1</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_effects/>
+  <library_images/>
+  <library_animations>
+    <animation id="action_container-Camera" name="Camera">
+      <animation id="Camera_CameraAction_location_X" name="Camera">
+        <source id="Camera_CameraAction_location_X-input">
+          <float_array id="Camera_CameraAction_location_X-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_X-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_X-output">
+          <float_array id="Camera_CameraAction_location_X-output-array" count="40">3.548892 3.313558 2.795823 2.278089 2.042755 2.045921 2.052886 2.05985 2.063016 1.892293 1.516702 1.141111 0.9703878 1.349517 2.146517 2.850803 3.075412 0.6635907 0.6686144 0.677314 0.6831675 0.6917939 0.7118478 0.7519835 0.8208554 0.9163874 1.017828 1.672456 2.56938 3.021127 2.888083 3.050058 2.765986 2.141028 1.516071 1.231999 1.422959 1.856118 2.321895 2.610707</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_X-output-array" count="40" stride="1">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_X-interpolation">
+          <Name_array id="Camera_CameraAction_location_X-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_X-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_location_X-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_location_X-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_location_X-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_location_X-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_location_X-sampler" target="Camera/location.X"/>
+      </animation>
+      <animation id="Camera_CameraAction_location_Y" name="Camera">
+        <source id="Camera_CameraAction_location_Y-input">
+          <float_array id="Camera_CameraAction_location_Y-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Y-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_Y-output">
+          <float_array id="Camera_CameraAction_location_Y-output-array" count="40">1.514209 1.513855 1.513078 1.5123 1.511947 1.764068 2.318734 2.8734 3.125521 2.908608 2.409411 1.855238 1.473398 1.318651 1.261639 1.253494 1.253807 1.254281 1.254742 1.255248 1.255851 1.256491 1.257079 1.257528 1.25775 1.258772 1.809778 1.809464 1.807565 1.802648 1.797304 2.4506 2.418268 2.337333 2.231884 2.126013 2.038904 1.97011 1.914283 1.866072</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Y-output-array" count="40" stride="1">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_Y-interpolation">
+          <Name_array id="Camera_CameraAction_location_Y-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Y-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_location_Y-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_location_Y-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_location_Y-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_location_Y-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_location_Y-sampler" target="Camera/location.Y"/>
+      </animation>
+      <animation id="Camera_CameraAction_location_Z" name="Camera">
+        <source id="Camera_CameraAction_location_Z-input">
+          <float_array id="Camera_CameraAction_location_Z-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Z-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_Z-output">
+          <float_array id="Camera_CameraAction_location_Z-output-array" count="40">1.338309 1.337889 1.336284 1.332983 1.327473 1.319609 1.310723 1.302513 1.296681 1.293635 1.288621 1.275594 1.248509 1.152285 0.9801914 0.7987095 0.6749822 0.6484424 0.6833783 0.8376817 1.157132 1.573651 1.990694 2.311718 2.440181 2.23778 2.104163 2.04917 1.869514 1.358414 0.5948681 0.5651321 0.562702 0.55855 0.5546274 0.5528861 0.740285 1.152562 1.564839 1.752238</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Z-output-array" count="40" stride="1">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_location_Z-interpolation">
+          <Name_array id="Camera_CameraAction_location_Z-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_location_Z-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_location_Z-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_location_Z-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_location_Z-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_location_Z-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_location_Z-sampler" target="Camera/location.Z"/>
+      </animation>
+      <animation id="Camera_CameraAction_rotation_euler_X" name="Camera">
+        <source id="Camera_CameraAction_rotation_euler_X-input">
+          <float_array id="Camera_CameraAction_rotation_euler_X-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_X-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_X-output">
+          <float_array id="Camera_CameraAction_rotation_euler_X-output-array" count="40">46.4593 46.48869 46.5705 46.69519 46.85317 47.0403 47.27401 47.57709 47.97238 48.46382 48.97977 49.42978 49.72334 49.84578 50.08544 50.80649 72.46912 73.33022 73.36273 73.40688 73.43559 73.4764 73.57059 73.75936 74.08394 124.724 48.07221 48.09202 48.2307 48.60718 79.90818 80.51898 80.5689 80.65419 80.73475 80.77053 72.50951 54.33529 36.16107 27.90005</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_X-output-array" count="40" stride="1">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_X-interpolation">
+          <Name_array id="Camera_CameraAction_rotation_euler_X-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_X-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_rotation_euler_X-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_rotation_euler_X-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_rotation_euler_X-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_rotation_euler_X-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_rotation_euler_X-sampler" target="Camera/rotationX.ANGLE"/>
+      </animation>
+      <animation id="Camera_CameraAction_rotation_euler_Y" name="Camera">
+        <source id="Camera_CameraAction_rotation_euler_Y-input">
+          <float_array id="Camera_CameraAction_rotation_euler_Y-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Y-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_Y-output">
+          <float_array id="Camera_CameraAction_rotation_euler_Y-output-array" count="40">0 -9.09737e-7 1.69311e-6 -6.01134e-7 6.83045e-7 -9.58465e-7 9.07142e-7 8.08733e-7 5.32135e-7 -2.51739e-7 1.34499e-6 8.12063e-7 9.41882e-7 -2.57501e-6 2.89396e-7 4.47216e-7 2.12301e-7 -1.9528e-7 1.21968e-7 -1.90268e-6 -1.58634e-6 -1.36109e-6 -6.89075e-7 1.92363e-6 -6.13152e-7 9.06567e-7 -3.25727e-7 -1.50307e-6 2.80903e-7 -1.36673e-7 -4.36358e-7 -3.01365e-7 4.1799e-7 0 -6.6901e-7 -8.53639e-7 -5.04042e-7 -1.02421e-6 1.66252e-6 2.19534e-6</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Y-output-array" count="40" stride="1">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_Y-interpolation">
+          <Name_array id="Camera_CameraAction_rotation_euler_Y-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Y-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_rotation_euler_Y-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_rotation_euler_Y-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_rotation_euler_Y-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_rotation_euler_Y-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_rotation_euler_Y-sampler" target="Camera/rotationY.ANGLE"/>
+      </animation>
+      <animation id="Camera_CameraAction_rotation_euler_Z" name="Camera">
+        <source id="Camera_CameraAction_rotation_euler_Z-input">
+          <float_array id="Camera_CameraAction_rotation_euler_Z-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Z-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_Z-output">
+          <float_array id="Camera_CameraAction_rotation_euler_Z-output-array" count="40">84.69197 95.95997 120.9795 146.5739 159.5664 160.9076 161.0992 161.2908 162.632 176.2306 203.1586 229.5117 241.3859 223.9578 191.5913 174.1632 176.7135 176.7559 196.5397 216.2597 216.2513 216.1928 216.034 215.7247 215.2149 44.46916 11.66332 11.91639 12.66003 13.87089 15.52559 17.60078 20.07311 22.91919 26.11569 29.63924 33.46648 37.57404 41.93855 46.53669</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Z-output-array" count="40" stride="1">
+              <param name="ANGLE" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_rotation_euler_Z-interpolation">
+          <Name_array id="Camera_CameraAction_rotation_euler_Z-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_rotation_euler_Z-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_rotation_euler_Z-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_rotation_euler_Z-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_rotation_euler_Z-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_rotation_euler_Z-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_rotation_euler_Z-sampler" target="Camera/rotationZ.ANGLE"/>
+      </animation>
+      <animation id="Camera_CameraAction_scale_X" name="Camera">
+        <source id="Camera_CameraAction_scale_X-input">
+          <float_array id="Camera_CameraAction_scale_X-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_X-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_X-output">
+          <float_array id="Camera_CameraAction_scale_X-output-array" count="40">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_X-output-array" count="40" stride="1">
+              <param name="X" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_X-interpolation">
+          <Name_array id="Camera_CameraAction_scale_X-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_X-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_scale_X-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_scale_X-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_scale_X-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_scale_X-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_scale_X-sampler" target="Camera/scale.X"/>
+      </animation>
+      <animation id="Camera_CameraAction_scale_Y" name="Camera">
+        <source id="Camera_CameraAction_scale_Y-input">
+          <float_array id="Camera_CameraAction_scale_Y-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Y-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_Y-output">
+          <float_array id="Camera_CameraAction_scale_Y-output-array" count="40">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Y-output-array" count="40" stride="1">
+              <param name="Y" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_Y-interpolation">
+          <Name_array id="Camera_CameraAction_scale_Y-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Y-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_scale_Y-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_scale_Y-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_scale_Y-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_scale_Y-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_scale_Y-sampler" target="Camera/scale.Y"/>
+      </animation>
+      <animation id="Camera_CameraAction_scale_Z" name="Camera">
+        <source id="Camera_CameraAction_scale_Z-input">
+          <float_array id="Camera_CameraAction_scale_Z-input-array" count="40">0.04166662 0.08333331 0.125 0.1666666 0.2083333 0.25 0.2916666 0.3333333 0.375 0.4166666 0.4583333 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1 1.041667 1.083333 1.125 1.166667 1.208333 1.25 1.291667 1.333333 1.375 1.416667 1.458333 1.5 1.541667 1.583333 1.625 1.666667</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Z-input-array" count="40" stride="1">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_Z-output">
+          <float_array id="Camera_CameraAction_scale_Z-output-array" count="40">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Z-output-array" count="40" stride="1">
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Camera_CameraAction_scale_Z-interpolation">
+          <Name_array id="Camera_CameraAction_scale_Z-interpolation-array" count="40">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR</Name_array>
+          <technique_common>
+            <accessor source="#Camera_CameraAction_scale_Z-interpolation-array" count="40" stride="1">
+              <param name="INTERPOLATION" type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="Camera_CameraAction_scale_Z-sampler">
+          <input semantic="INPUT" source="#Camera_CameraAction_scale_Z-input"/>
+          <input semantic="OUTPUT" source="#Camera_CameraAction_scale_Z-output"/>
+          <input semantic="INTERPOLATION" source="#Camera_CameraAction_scale_Z-interpolation"/>
+        </sampler>
+        <channel source="#Camera_CameraAction_scale_Z-sampler" target="Camera/scale.Z"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <scale sid="scale">1 1 0.9999999</scale>
+        <rotate sid="rotationZ">0 0 1 46.53669</rotate>
+        <rotate sid="rotationY">0 1 0 0</rotate>
+        <rotate sid="rotationX">1 0 0 27.90005</rotate>
+        <translate sid="location">2.610707 1.866072 1.752238</translate>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
