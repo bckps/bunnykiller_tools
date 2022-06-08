@@ -24,9 +24,7 @@ class SimuCmd:
         self.camera_lookup='0 2 3'
         self.camera_fov=40
 
-        # self.point_light=self.camera_pos+' 0.1'
         self.point_light = self.camera_pos+' 1 1 1'
-        self.rect_light = self.camera_pos+' '+self.camera_at+ ' 100 100 1'
 
         self.objfile='model/export_bathroom_small.obj'
 
