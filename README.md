@@ -1,6 +1,6 @@
 # create_lookat_lookup.py
  BlenderのLocation(位置)とRotation(回転)からbunnykillerで必要なカメラのパラメータを計算する。
-  
+
   
 # dae_parser.py
 Blenderでkeyframeを打ち込み、作成したdaeファイルを読み込む。
@@ -9,20 +9,45 @@ Blenderでkeyframeを打ち込み、作成したdaeファイルを読み込む�
 # dae_simu.py
 このスクリプトで「.obj」,「.dae」,「filename」を入力して実行すれば,  
 bunnykillerを実行するファイルを作成し読み込んだkeyframeの数だけシミュレーションを開始する。
+dae_simu.pyからもシミュレーションの変数を変更できる。
 ```
 実行例
 obj_file = '/home/blenderfileBox/5by5-front-plane.obj'
-blenderから三角化済みのobjファイルを指定する。
+    blenderから三角化済みのobjファイルを指定する。
 
 dae_file = '/home/blenderfileBox/5by5-front-plane.dae'
-blenderでカメラの位置、向きを設定しキーフレームを登録、daeファイルにExport。
-Exportする際の設定は次のように行う。
-1. Main→Selection Only(check)
-2. Geom,Anim→Transform(Decomposed)
-3. Anim→Sampling Rate→All Keyed Curves(check)
+    blenderでカメラの位置、向きを設定しキーフレームを登録、daeファイルにExport。
+    Exportする際の設定は次のように行う。
+    1. Main→Selection Only(check)
+    2. Geom,Anim→Transform(Decomposed)
+    3. Anim→Sampling Rate→All Keyed Curves(check)
 
 simu_name = '5by5-front-plane'
-一連のキーフレームで行うシミュレーションに名前をつける。
+    一連のキーフレームで行うシミュレーションに名前をつける。
+
+
+ディレクトリ構成
+
+~/bunnykiller_tools/
+　├ dae_simu.py
+　│
+　├ model/
+　│　└ livingroom.obj
+　├ daes/
+　│　└ livingroom-train1.dae
+　│
+　├ scene-results/
+　│　└ livingroom-train1/
+　│　　　├ 00000/
+　│　　　│　└ hdr/
+　│　　　│ 　 　└ livingroom-train1.hdr
+　│　　　│ 　   └ ...
+　│　　　└ 00001/
+　│　　　└ ...
+　└ etc
+
+livingroom-train1はシミュレーションの名前で実行時にscene-results下に作成される。
+livingroom-train1/00000では0番目に設定したカメラの位置でシミュレーションを行う。
 ```
 
 ## camera_sppなどのシミュレーションの変数を変更する
