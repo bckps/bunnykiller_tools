@@ -13,7 +13,9 @@ dae_simu.pyからもシミュレーションの変数を変更できる。
 ```
 実行例
 obj_file = '/home/blenderfileBox/5by5-front-plane.obj'
-    blenderから三角化済みのobjファイルを指定する。
+    blenderから三角化済みのobjファイルを指定する。 
+    またTransformの設定をForward:Y, Up:ZにするとBlenderの座標で出力される。
+
 
 dae_file = '/home/blenderfileBox/5by5-front-plane.dae'
     blenderでカメラの位置、向きを設定しキーフレームを登録、daeファイルにExport。
@@ -49,6 +51,7 @@ simu_name = '5by5-front-plane'
 livingroom-train1はシミュレーションの名前で実行時にscene-results下に作成される。
 livingroom-train1/00000では0番目に設定したカメラの位置でシミュレーションを行う。
 ```
+![obj-export-settings](imgs/obj-export-settings.png)
 
 ## camera_sppなどのシミュレーションの変数を変更する
 

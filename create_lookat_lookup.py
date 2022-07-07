@@ -8,11 +8,6 @@ class RotVector:
         self.lookat = np.array([0, 0, -1])
         self.lookup = np.array([0, 1, 0])
 
-    def convert_blender2simu(self, blen_vec):
-        simu_vec = np.array([blen_vec[0],blen_vec[2], -blen_vec[1]])
-        return simu_vec
-
-
     def apply_coordinates_LookatLookup(self, locvec, rotvec):
         """
         # rotation order is x, y, z in Blender. If you change this order, results change.
@@ -24,8 +19,8 @@ class RotVector:
         rz = R.from_rotvec(np.array([0, 0, rotvec[2]]).astype(float), degrees=True)
         rot = rz * ry * rx
 
-        lookat = self.convert_blender2simu(rot.apply(self.lookat)) + self.convert_blender2simu(locvec)
-        lookup = self.convert_blender2simu(rot.apply(self.lookup))
+        lookat = rot.apply(self.lookat) + locvec
+        lookup = rot.apply(self.lookup)
         return lookat, lookup
 
 

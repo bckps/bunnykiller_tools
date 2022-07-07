@@ -69,9 +69,9 @@ class CameraPoints:
         # This code provide camera parameters for iteration loop.
         rotv = RotVector()
 
-        # camera parameters are mede by convert_blender2simu, apply_coordinates_LookatLookup.
+        # camera parameters are mede by apply_coordinates_LookatLookup.
         for xl, yl, zl, xr, yr, zr in zip(self.x_loc, self.y_loc, self.z_loc, self.x_rot, self.y_rot, self.z_rot):
-            cam_loc = rotv.convert_blender2simu(np.array([xl, yl, zl]).astype(float))
+            cam_loc = np.array([xl, yl, zl]).astype(float)
             lookat, lookup = rotv.apply_coordinates_LookatLookup(np.array([xl, yl, zl]).astype(float),
                                                          np.array([xr, yr, zr]).astype(float))
             yield cam_loc, lookat, lookup
